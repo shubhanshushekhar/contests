@@ -68,7 +68,7 @@ int32_t main()
 {
     FIO;
     int t=1;
-    //cin >> t;
+    cin >> t;
 for(int i=1;i<=t;i++)
     {
         solve();
@@ -77,4 +77,7 @@ for(int i=1;i<=t;i++)
 void solve()
 {
     int i, n, j, m, k, l, t;
+    cin >> n;
+    f(i,n-1) cout << i+2 << " ";
+    cout << 1 << endl;
 }

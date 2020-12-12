@@ -68,7 +68,7 @@ int32_t main()
 {
     FIO;
     int t=1;
-    //cin >> t;
+    cin >> t;
 for(int i=1;i<=t;i++)
     {
         solve();
@@ -77,4 +77,27 @@ for(int i=1;i<=t;i++)
 void solve()
 {
     int i, n, j, m, k, l, t;
+    cin >> n;
+    //  vi v(n);
+    vi v(n);
+    map<int,vi> mm;
+     f(i,n) cin >> v[i];
+    //  sort(all(v));
+    f(i,n) mm[v[i]].pb(i);
+    bool ans=true;
+    for(auto it: mm)
+    {
+        if(it.ss.size() ==1) 
+        {
+            cout << it.ss[0] +1 << endl;
+            ans = false;
+            break;
+        }
+    }
+
+    if(ans) cout << -1 << endl;
+
+
+
+     
 }
