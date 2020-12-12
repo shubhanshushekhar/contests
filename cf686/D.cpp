@@ -114,7 +114,7 @@ void solve()
         {
             cout << k << endl;
             f(i,k-1) cout << l << " ";
-            cout << n/(pow(l,k-1)) << endl;
+            cout << int(n/(int)(pow(l,k-1))) << endl;
         }
         
 
